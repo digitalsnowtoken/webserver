@@ -4,9 +4,11 @@ pipeline {
      stages {
 
         stage('PLAN') {
-               steps {     
-                   sh './webserver-terraform/ terraform init'
-                   sh './webserver-terraform/ terraform plan'
+               steps {
+                   dir('webserver-terraform'){      
+                    sh 'terraform init'
+                    sh 'terraform plan'
+                   }
 	          }
 	     }
      }
