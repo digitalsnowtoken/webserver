@@ -1,24 +1,24 @@
 variable "ami_id" {
-    type = "string"
+    type = string
 }
 
 variable "instance_type" {
     default = "t2.micro"
-    type = "string"
+    type = string
 }
 
 variable "vpc" {
-  type = "string"
+  type = string
 }
 
 variable "subnet" {
-  type = "string"
+  type = string
 }
 
 variable "cidr_block_vpc" {
-  type = "string"
+  type = string
 }
 
 variable "cidr_block_sn" {
-  type = "string"
+  type = string
 }
