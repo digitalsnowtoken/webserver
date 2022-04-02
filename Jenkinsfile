@@ -4,10 +4,11 @@ pipeline {
      stages {
 
         stage('PLAN') {
-            steps {
-              sh 'terraform init'
-
-	    }
-	}
+               steps {
+               sh 'cd webserver'     
+               sh 'terraform init'
+               sh 'terraform plan'
+	          }
+	     }
      }
 }
