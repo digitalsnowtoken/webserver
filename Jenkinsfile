@@ -5,7 +5,7 @@ pipeline {
 
         stage('PLAN') {
                steps {
-               sh 'cd webserver'     
+               sh 'cd webserver-terraform'     
                sh 'terraform init'
                sh 'terraform plan'
 	          }
