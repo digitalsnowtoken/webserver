@@ -18,7 +18,7 @@ resource "aws_subnet" "ws-sn-dev2" {
 resource "aws_instance" "webserver" {
     ami = "${var.ami_id}"
     instance_type = "${var.instance_type}"
-    subnet_id = aws_subnet.ws-sn-dev2
+    subnet_id = aws_subnet.ws-sn-dev2.id
 
     tags = {
         Name = "webserver"
