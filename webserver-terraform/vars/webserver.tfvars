@@ -1,0 +1,6 @@
+ami_id = "ami-0ba62214afa52bec7"
+instance_type = "t2.micro"
+vpc = "ws-vpc-dev2"
+subnet = "ws-sn-dev2"
+cidr_block_vpc = "192.168.1.0/27"
+cidr_block_sn = "192.168.1.0/28"
