@@ -1,3 +1,5 @@
+def tfvars = "./vars/webserver.tfvars"
+
 pipeline {
      agent any
      
@@ -7,7 +9,7 @@ pipeline {
                steps {
                    dir('webserver-terraform'){      
                     sh 'terraform init'
-                    sh 'terraform plan'
+                    sh "terraform plan -var-file=${tfvars}"
                    }
 	          }
 	     }

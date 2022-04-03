@@ -1,3 +1,8 @@
+variable "region" {
+  default = "us-east-2"
+  type = string
+}
+
 variable "ami_id" {
     type = string
 }
@@ -7,11 +12,11 @@ variable "instance_type" {
     type = string
 }
 
-variable "vpc" {
+variable "vpc_name" {
   type = string
 }
 
-variable "subnet" {
+variable "sn_name" {
   type = string
 }
 
@@ -20,5 +25,9 @@ variable "cidr_block_vpc" {
 }
 
 variable "cidr_block_sn" {
+  type = string
+}
+
+variable "webserver_name" {
   type = string
 }
